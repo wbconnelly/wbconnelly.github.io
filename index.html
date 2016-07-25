@@ -122,7 +122,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token='
 
 var crimesAjax = $.getJSON('https://bc3.demo.socrata.com/resource/mcnk-jzhq.json?$limit=1000');
 
-var dcGeoJSON = $.getJSON('http://opendata.dc.gov/datasets/db24f3b7de994501aea97ce05a50547e_10.geojson');
+var dcGeoJSON = $.getJSON('https://opendata.dc.gov/datasets/db24f3b7de994501aea97ce05a50547e_10.geojson');
 
 $.when(crimesAjax, dcGeoJSON).then(function(crimes, geoJSON) {
     var crime = crimes[0];
